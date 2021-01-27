@@ -48,15 +48,9 @@
     ================================================== -->
     <header class="s-header">
 
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">
-                <img src="~/images/logo.svg" alt="Homepage">
-            </a>
-        </div> <!-- end header-logo -->
-
         <nav class="header-nav">
 
-            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+            <a href="#" class="header-nav__close" title="close"><span>Close</span></a>
 
             <h3>Navigate to</h3>
 
@@ -65,13 +59,13 @@
                 <ul class="header-nav__list">
                     <li><a class="smoothscroll" href="#hero" title="home">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
-                    <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll" href="#skills" title="skills">Skills</a></li>
+                    <li><a class="smoothscroll" href="#projects" title="projects">Projects</a></li>
                     <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
                 </ul>
 
                 <p>
-                    If you have any question, do not hesitate to <a href='#contact'>contact me</a> or feel free to reach out through any platforms bellow:
+                    If you have any question, do not hesitate to <a class="smoothscroll" href='#contact'>contact me</a> or feel free to reach out through any platforms bellow:
                 </p>
 
                 <ul class="header-nav__social">
@@ -104,7 +98,7 @@
 
     <!-- footer
     ================================================== -->
-    <footer class="s-footer h-dark-bg">
+    <footer id="contact" class="s-footer h-dark-bg">
 
         <div class="right-vert-line"></div>
 
@@ -120,7 +114,7 @@
                 </div>
 
                 <div class="footer-email-us">
-                    <a href="#" class="btn btn--primary h-full-width">Let's Talk</a>
+                    <a href="mailto:vrancianuandrei@gmail.com" class=" dark btn btn--primary h-full-width mailtoui">Let's Talk</a>
                 </div>
             </div>
 
@@ -130,8 +124,8 @@
                         <h5 class="footer-contact-block__header">
                             Email
                         </h5>
-                        <p class="footer-contact-block__content">
-                            <a href="mailto:#0">sayhello@ethos.com</a>
+                        <p class="footer-contact-block__content dark">
+                            <a href="mailto:vrancianuandrei@gmail.com">vrancianuandrei.com</a>
                         </p>
                     </div> <!-- end footer-contact-block -->
                     <div class="footer-contact-block" data-aos="fade-up">
@@ -139,7 +133,7 @@
                             Phone
                         </h5>
                         <p class="footer-contact-block__content">
-                            <a href="tel:+1975432345">+197 543 2345</a>
+                            <a href="tel:+40753704360">+40753704360 (RO)</a>
                         </p>
                     </div> <!-- end footer-contact-block -->
                     <br>
@@ -148,10 +142,9 @@
                             Social
                         </h5>
                         <ul class="footer-contact-block__list">
-                            <li><a href="#0">Twitter</a></li>
-                            <li><a href="#0">Instagram</a></li>
-                            <li><a href="#0">Behance</a></li>
-                            <li><a href="#0">Dribbble</a></li>
+                            <li><a href="https://www.facebook.com/andrei.vrancianu">Facebook</a></li>
+                            <li><a href="https://www.linkedin.com/in/andrei-vr%C3%A2ncianu/">Linkedin</a></li>
+                            <li><a href="https://github.com/V-Andrei">Github</a></li>
                         </ul>
                     </div> <!-- end footer-contact-block -->
                 </div>
@@ -208,6 +201,16 @@
     </div> <!-- end photoSwipe background -->
     <!-- Java Script
     ================================================== -->
+
+    <script>
+        // this object must follow the MailgoConfig type
+        window.mailgoConfig = {
+            dark: true,
+            showFooter: false,
+        };
+    </script>
+
+    <script src="https://unpkg.com/mailgo@0.11.2/dist/mailgo.dark.min.js"></script>
     <script src="~/js/jquery-3.2.1.min.js"></script>
     <script src="~/js/plugins.js"></script>
     <script src="~/js/main.js" asp-append-version="true"></script>
